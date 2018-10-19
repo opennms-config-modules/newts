@@ -1,0 +1,55 @@
+= NewTS data performance data collection
+
+This repository contains the configuration to use link:http://www.opennms.org[OpenNMS] collecting performance metrics provided through JMX for a Cassandra node with the NewTS schema installed.
+
+== Requirements
+
+* Tested with Cassandra 3.11 with NewTS
+* OpenNMS Horizon/Meridian
+* Java JMX access to the Cassandra node
+* Provision your Cassandra nodes into OpenNMS for monitoring
+* The config example has OpenNMS installed in `/opt/opennms`, on Debian/Ubuntu change the path accordingly to `/usr/share/opennms`
+
+== Install data collection configuration
+
+Checkout this repository with git or copy the files manually using the GitHub raw link to download the configuration files.
+
+.Install configuration for metrics collection and RRD graph definitions
+[source, bash]
+----
+git clone https://github.com/opennms-config-modules/newts.git
+cd cassandra
+cp graphs/newts-graph.properties /opt/opennms/etc/snmp-graph.properties.d
+cp datacollection/newts.xml /opt/opennms/etc/jmx-datacollection-config.d
+----
+
+== Configure Collectd
+
+Add the following lines `collectd-configuration.xml` in the `in the default installed ``example1` package.
+
+.Create a new collection service for the NewTS metrics
+[source, xml]
+----
+<service name="JMX-Newts" interval="30000" user-defined="false" status="on">
+    <parameter key="port" value="7199"/>
+    <parameter key="retry" value="2"/>
+    <parameter key="timeout" value="3000"/>
+    <parameter key="rrd-base-name" value="jmx-newts"/>
+    <parameter key="collection" value="jmx-newts"/>
+    <parameter key="thresholding-enabled" value="true"/>
+    <parameter key="ds-name" value="jmx-newts"/>
+    <parameter key="friendly-name" value="jmx-newts"/>
+    <parameter key="protocol" value="rmi"/>
+    <parameter key="urlPath" value="/jmxrmi"/>
+    <parameter key="factory" value="PASSWORD-CLEAR"/>
+    <parameter key="username" value="cassandra"/>
+    <parameter key="password" value="cassandra"/>
+</service>
+
+<collector service="JMX-Newts" class-name="org.opennms.netmgt.collectd.Jsr160Collector"/>
+----
+
+Restart OpenNMS and provision a service on your nodes IP interface named `JMX-Newts`.
+
+== Author
+ronny@opennms.org
