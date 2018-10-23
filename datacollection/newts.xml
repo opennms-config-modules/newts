@@ -101,17 +101,17 @@
             </mbean>
             <mbean name="org.apache.cassandra.metrics.Keyspace"
                    objectname="org.apache.cassandra.metrics:type=Keyspace,keyspace=newts,name=PendingFlushes">
-                <attrib name="Value" alias="pendingFlushes" type="gauge"/>
+                <attrib name="Value" alias="pendingFlushes" type="counter"/>
             </mbean>
 
             <!-- Disk Space -->
             <mbean name="org.apache.cassandra.metrics.Keyspace"
                    objectname="org.apache.cassandra.metrics:type=Keyspace,keyspace=newts,name=TotalDiskSpaceUsed">
-                <attrib name="Value" alias="totalDiskSpaceUsed" type="gauge"/>
+                <attrib name="Value" alias="totalDiskSpaceUsed" type="counter"/>
             </mbean>
             <mbean name="org.apache.cassandra.metrics.Keyspace"
                    objectname="org.apache.cassandra.metrics:type=Keyspace,keyspace=newts,name=LiveDiskSpaceUsed">
-                <attrib name="Value" alias="liveDiskSpaceUsed" type="gauge"/>
+                <attrib name="Value" alias="liveDiskSpaceUsed" type="counter"/>
             </mbean>
         </mbeans>
     </jmx-collection>
