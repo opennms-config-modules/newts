@@ -97,7 +97,7 @@
             "label": "Count [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -190,7 +190,7 @@
             "label": "Count [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -284,7 +284,7 @@
             "label": "Live Data Size [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -299,7 +299,7 @@
             "label": "Off-Heap Data Size [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -313,7 +313,7 @@
             "label": "On Heap Data Size [$node]",
             "nodeId": "$node",
             "refId": "C",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -407,7 +407,7 @@
             "label": "Live Data Size [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -422,7 +422,7 @@
             "label": "Off-Heap Data Size [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -436,7 +436,7 @@
             "label": "On Heap Data Size [$node]",
             "nodeId": "$node",
             "refId": "C",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -533,7 +533,7 @@
             "label": "Read Total Latency [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -546,7 +546,7 @@
             "label": "Write Total Latency [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -637,7 +637,7 @@
             "label": "Range Latency 99th Percentile [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -728,7 +728,7 @@
             "label": "Commit Total Latency [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -741,7 +741,7 @@
             "label": "Prepare Total Latency [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -754,7 +754,7 @@
             "label": "Propose Total Latency [$node]",
             "nodeId": "$node",
             "refId": "C",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -845,7 +845,7 @@
             "label": "Bloom Filter Disk Usage [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -858,7 +858,7 @@
             "label": "Propose Total Latency [$node]",
             "nodeId": "$node",
             "refId": "C",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -949,7 +949,7 @@
             "label": "Bloom Filter Memory Usage [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -1040,7 +1040,7 @@
             "label": "Compression Metadata Off-Heap Memory Used [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -1053,7 +1053,7 @@
             "label": "Index Summary Off-Heap Memory Used [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -1144,7 +1144,7 @@
             "label": "Pending Compactions [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -1157,7 +1157,7 @@
             "label": "Pending Flushes [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -1248,7 +1248,7 @@
             "label": "Total Disk Space Used [$node]",
             "nodeId": "$node",
             "refId": "A",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           },
           {
@@ -1261,7 +1261,7 @@
             "label": "Live Disk Space Used [$node]",
             "nodeId": "$node",
             "refId": "B",
-            "resourceId": "interfaceSnmp[jmx-newts]",
+            "resourceId": "interfaceSnmp[cassandra-newts]",
             "type": "attribute"
           }
         ],
@@ -1326,7 +1326,7 @@
           "multi": true,
           "name": "node",
           "options": [],
-          "query": "nodeFilter(serviceName like 'JMX-Newts')",
+          "query": "nodeFilter(serviceName like 'JMX-Cassandra-Newts')",
           "refresh": 2,
           "regex": "",
           "skipUrlSync": false,
